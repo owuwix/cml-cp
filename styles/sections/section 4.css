@@ -1,0 +1,31 @@
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+  gap: 84px;
+}
+.flexbox img {
+  height: 609.9px;
+}
+.flexbox .article {
+  display: flex;
+  gap: 74px;
+  flex-direction: column;
+}
+.flexbox .article img {
+  height: 250px;
+  width: 568px;
+}
+.flexbox .article .text {
+  padding-left: 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.flexbox .article .text p {
+  font-family: "Montserrat";
+  color: rgba(44, 21, 0, 0.8);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}/*# sourceMappingURL=section 4.css.map */

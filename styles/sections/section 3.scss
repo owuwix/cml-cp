@@ -1,0 +1,86 @@
+$mainColor: #e0e0e0;
+$gap: 8px;
+
+@mixin montserrat {
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+@mixin info {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 20px;
+}
+@mixin row {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin column {
+    display: flex;
+    flex-direction: column;
+}
+
+.assortment {
+    padding-top: 80px;
+    gap: $gap * 3;
+
+    @include column();
+
+    .goods {
+        @include row();
+
+        .good {
+            gap: $gap * 2;
+            align-items: center;
+
+            @include column();
+
+            img {
+                height: 217px;
+                background-color: $mainColor;
+            }
+            .good__info {
+                gap: $gap;
+                align-items: center;
+
+                @include column();
+
+                a {
+                    span {
+                        font-weight: 400;
+                        color: black;
+                        
+                        @include info();
+                    }
+                }
+                span {
+                    font-weight: 600;
+
+                    @include info();
+                }
+            }
+        }
+    }
+    .head {
+        padding-bottom: 16px;
+        border-bottom: 1px solid $mainColor;
+        
+        @include row();
+    
+        h4 {
+            font-size: 20px;
+            line-height: 24px;
+    
+            @include montserrat();
+        }
+        select {
+            width: 130px;
+            height: 31px;
+            border: 1px solid $mainColor;
+            font-size: 12px;
+            line-height: 15px;
+            padding: 8px 0 8px 12px;
+    
+            @include montserrat();
+        }
+    }
+}

@@ -1,0 +1,116 @@
+$flex: flex;
+$padding: 111px;
+$gap: 10px;
+$weight: 500;
+$fonts: 16px;
+$workSans: 'Work Sans';
+$mainColor: #156963;
+
+@mixin flexbox {
+    display: $flex;
+    flex-direction: column;
+}
+@mixin h5 {
+    font-family: $workSans;
+    font-weight: $weight;
+    font-size: $fonts;
+    line-height: $fonts;
+}
+@mixin li {
+    font-family: $workSans;
+    font-weight: $weight - 100;
+    line-height: $fonts;
+    font-size: $fonts - 2px;
+}
+
+.footer {
+    padding: 60px $padding 71px $padding;
+    display: $flex;
+    justify-content: space-between;
+
+    .info {
+        gap: $gap + 14px;
+
+        @include flexbox();
+
+        span {
+            color: $mainColor;
+            font-family: 'Poppins';
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: $weight;
+            font-size: $fonts + 8px;
+            line-height: $fonts + 8px;
+        }
+        .description {
+            gap: $gap;
+
+            @include flexbox();
+
+            h5 {
+                color: #333333;
+                font-family: $workSans;
+                line-height: $fonts + 3px;
+                font-size: $fonts;
+                font-weight: $weight;
+            }
+            p {
+                color: #4f4f4f;
+                font-family: $workSans;
+                font-weight: $weight - 100;
+                font-size: $fonts - 3px;
+                line-height: $fonts + 4px;
+                width: 282px;
+            }
+        }
+    }
+    .persons {
+        gap: $gap * 2;
+
+        @include flexbox();
+
+        h5 {
+            @include h5;
+        }
+        div {
+            .list {
+                gap: $gap + 4px;
+
+                @include flexbox();
+
+                .list__item {
+                    @include li();
+                }
+            }
+        }
+    }
+    .contact {
+        form {
+            gap: $gap + 4px;
+
+            @include flexbox();
+
+            label {
+                @include h5();
+            }
+            input {
+                border: 1px solid #f2f2f2;
+                border-radius: 2px;
+                width: 234px;
+                height: 32px;
+                box-sizing: border-box;
+                padding-left: 12px;
+            }
+            button {
+                color: white;
+                background-color: $mainColor;
+                border: none;
+                width: 51px;
+                height: 22px;
+                font-weight: $weight;
+                font-size: $fonts / 2;
+                line-height: $fonts - 2px;
+            }
+        }
+    }
+}

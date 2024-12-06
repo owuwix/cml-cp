@@ -1,0 +1,55 @@
+$flex: flex;
+$icons: 20px;
+$size: 36px;
+$maincolor: #156963;
+$cleancolor: white;
+
+@mixin nunito {
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.header {
+    display: $flex;
+    justify-content: space-between;
+    height: $size;
+    padding-top: 40px;
+
+    .navigation {
+        display: $flex;
+        gap: 8px;
+
+        .icons {
+            display: $flex;
+            align-items: center;
+            gap: 40px;
+
+            img {
+                width: $icons;
+                height: $icons;
+            }
+        }
+        .buttons {
+            display: $flex;
+            gap: 0px;
+
+            button {
+                width: 111px;
+                height: $size;
+                border: none;
+
+                @include nunito();
+            }
+            .buttons__registration {
+                background-color: $cleancolor;
+                color: $maincolor;
+            }
+            .buttons__login {
+                background-color: $maincolor;
+                color: $cleancolor;
+            }
+        }
+    }
+}

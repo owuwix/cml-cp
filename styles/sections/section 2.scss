@@ -1,0 +1,41 @@
+@mixin flexbox {
+    display: flex;
+    gap: 16px;
+}
+
+.advantages {
+    padding-top: 140px;
+    display: flex;
+    justify-content: space-between;
+
+    .advantage {
+        border: 1px solid #e0e0e0;
+        padding: 21px 16px;
+        flex-direction: column;
+
+        @include flexbox();
+
+        div {
+            @include flexbox();
+
+            img {
+                height: 48px;
+            }
+            span {
+                color: #156963;
+                font-family: 'Montserrat';
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        p {
+            color: #2c1500;
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 16px;
+            width: 236px;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+.slider {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        margin-left: -112px;
+        margin-top: -76px;
+        height: 740px;
+        width: 620px;
+    }
+    .slider__navigation {
+        display: flex;
+        flex-direction: column;
+        gap: 110px;
+        padding-top: 110px;
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            p {
+                width: 493px;
+                color: rgba($color: #2c1500, $alpha: 1.0);
+                font-family: 'Montserrat';
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 32px;
+            }
+        }
+        .buttons {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: -56px;
+
+            a {
+                button {
+                    border: none;
+                    width: 320px;
+                    height: 160px;
+                    padding: 39px 49px 38px 49px;
+                }
+                .kaktus {
+                    background-color: white;
+                    color: #156963;
+                    
+                    .kaktus__content {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+
+                        div {
+                            display: flex;
+                            gap: 8px;
+                            
+                            img {
+                                height: 32px;
+                                width: 32px;
+                            }
+                        }
+                    }
+                }
+                .rahasia {
+                    background-color: #156963;
+                    color: white;
+                }
+            }
+        }
+    }
+}

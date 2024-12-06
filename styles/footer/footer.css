@@ -1,0 +1,90 @@
+.footer {
+  padding: 60px 111px 71px 111px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .info {
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.footer .info span {
+  color: #156963;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+}
+.footer .info .description {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.footer .info .description h5 {
+  color: #333333;
+  font-family: "Work Sans";
+  line-height: 19px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer .info .description p {
+  color: #4f4f4f;
+  font-family: "Work Sans";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  width: 282px;
+}
+.footer .persons {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.footer .persons h5 {
+  font-family: "Work Sans";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+}
+.footer .persons div .list {
+  gap: 14px;
+  display: flex;
+  flex-direction: column;
+}
+.footer .persons div .list .list__item {
+  font-family: "Work Sans";
+  font-weight: 400;
+  line-height: 16px;
+  font-size: 14px;
+}
+.footer .contact form {
+  gap: 14px;
+  display: flex;
+  flex-direction: column;
+}
+.footer .contact form label {
+  font-family: "Work Sans";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+}
+.footer .contact form input {
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  width: 234px;
+  height: 32px;
+  box-sizing: border-box;
+  padding-left: 12px;
+}
+.footer .contact form button {
+  color: white;
+  background-color: #156963;
+  border: none;
+  width: 51px;
+  height: 22px;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 14px;
+}/*# sourceMappingURL=footer.css.map */

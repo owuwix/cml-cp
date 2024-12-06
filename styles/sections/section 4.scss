@@ -1,0 +1,37 @@
+$flexbox: flex;
+$column: column;
+
+.flexbox {
+    display: $flexbox;
+    justify-content: space-between;
+    padding-top: 80px;
+    gap: 84px;
+
+    img {
+        height: 609.9px;
+    }
+    .article {
+        display: $flexbox;
+        gap: 74px;
+        flex-direction: $column;
+
+        img {
+            height: 250px;
+            width: 568px;
+        }
+        .text {
+            padding-left: 21px;
+            display: $flexbox;
+            flex-direction: $column;
+            gap: 16px;
+
+            p {
+                font-family: 'Montserrat';
+                color: rgba(#2c1500, 0.8);
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+    }
+}

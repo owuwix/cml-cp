@@ -1,0 +1,42 @@
+$padding: 80px;
+$height: 40px;
+$background: #f3f4f6;
+$flexbox: flex;
+
+.invitation {
+    padding-bottom: $padding;
+    padding-top: $padding;
+
+    .shop {
+        background-color: $background;
+        display: $flexbox;
+        justify-content: space-between;
+
+        .link {
+            padding-left: $padding + 13px;
+            padding-top: $padding + 8px;
+            padding-bottom: $padding + 8px;
+            display: $flexbox;
+            flex-direction: column;
+            gap: 32px;
+            
+            button {
+                font-family: 'Nunito';
+                background-color: #156963;
+                color: #fafefe;
+                border: none;
+                width: 152px;
+                height: $height;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+        .photo {
+            img {
+                height: $height * 9;
+                padding-right: $padding - 39px;
+            }
+        }
+    }
+}

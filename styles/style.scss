@@ -1,0 +1,50 @@
+$start: 0px;
+$container: 56px;
+$clean: none;
+
+@import "../styles/header/header.scss";
+@import "../styles/sections/section\ 1.scss";
+@import "../styles/sections/section\ 2.scss";
+@import "../styles/sections/section\ 3.scss";
+@import "../styles/sections/section\ 4.scss";
+@import "../styles/sections/section\ 5.scss";
+@import "../styles/footer/footer.scss";
+
+* {
+    margin: $start;
+    padding: $start;
+
+    a {
+        text-decoration: $clean;
+    }
+    ul {
+        list-style-type: $clean;
+    }
+    h1 {
+        font-size: 68px;
+        line-height: 83px;
+        color: #156963;
+        font-family: 'Montserrat';
+        font-weight: 500;
+    }
+    h3 {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 56px;
+        color: #2c1500;
+    }
+    header {
+        background: transparent;
+        position: relative;
+        z-index: 1000;
+    }
+    footer {
+        border-top: 1px solid rgba(#156963, 0.8);
+    }
+    .container {
+        margin-left: $container;
+        margin-right: $container;
+        max-width: 100%;
+    }
+}

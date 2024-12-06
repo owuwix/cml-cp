@@ -1,0 +1,61 @@
+.slider {
+  display: flex;
+  justify-content: space-between;
+}
+.slider img {
+  margin-left: -112px;
+  margin-top: -76px;
+  height: 740px;
+  width: 620px;
+}
+.slider .slider__navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 110px;
+  padding-top: 110px;
+}
+.slider .slider__navigation .info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.slider .slider__navigation .info p {
+  width: 493px;
+  color: #2c1500;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+}
+.slider .slider__navigation .buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -56px;
+}
+.slider .slider__navigation .buttons a button {
+  border: none;
+  width: 320px;
+  height: 160px;
+  padding: 39px 49px 38px 49px;
+}
+.slider .slider__navigation .buttons a .kaktus {
+  background-color: white;
+  color: #156963;
+}
+.slider .slider__navigation .buttons a .kaktus .kaktus__content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.slider .slider__navigation .buttons a .kaktus .kaktus__content div {
+  display: flex;
+  gap: 8px;
+}
+.slider .slider__navigation .buttons a .kaktus .kaktus__content div img {
+  height: 32px;
+  width: 32px;
+}
+.slider .slider__navigation .buttons a .rahasia {
+  background-color: #156963;
+  color: white;
+}/*# sourceMappingURL=section 1.css.map */

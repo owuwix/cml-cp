@@ -1,0 +1,34 @@
+.advantages {
+  padding-top: 140px;
+  display: flex;
+  justify-content: space-between;
+}
+.advantages .advantage {
+  border: 1px solid #e0e0e0;
+  padding: 21px 16px;
+  flex-direction: column;
+  display: flex;
+  gap: 16px;
+}
+.advantages .advantage div {
+  display: flex;
+  gap: 16px;
+}
+.advantages .advantage div img {
+  height: 48px;
+}
+.advantages .advantage div span {
+  color: #156963;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+.advantages .advantage p {
+  color: #2c1500;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  width: 236px;
+}/*# sourceMappingURL=section 2.css.map */
